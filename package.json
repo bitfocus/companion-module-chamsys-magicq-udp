@@ -1,0 +1,16 @@
+{
+  "name": "chamsys-magicqudp",
+  "version": "0.0.1",
+  "description": "Module to control Chamsys MagicQ Consoles over UDP network ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "UDP",
+    "Chamsys",
+    "MagicQ"
+  ],
+  "author": "Per Roine",
+  "license": "MIT"
+}

@@ -61,7 +61,7 @@ instance.prototype.config_fields = function () {
 			id: 'port',
 			label: 'Target Port',
 			width: 4,
-			default: '6553'
+			default: '6553',
 			regex: self.REGEX_PORT
 		}
 	]
@@ -306,7 +306,7 @@ instance.prototype.action = function(action) {
 
 
 		case 'pbJump':
-			cmd = opt.pbId + ',' + opt.cue + ',' opt.cueDec +'J';
+			cmd = opt.pbId + ',' + opt.cue + ','+ opt.cueDec +'J';
 			debug(cmd);
 
 		break;

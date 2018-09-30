@@ -323,11 +323,5 @@ instance.prototype.action = function(action) {
 
 };
 
-instance.module_info = {
-	label: 'Chamsys MagicQ UDP',
-	id: 'chamsys-magicqudp',
-	version: '0.0.1'
-};
-
 instance_skel.extendedBy(instance);
 exports = module.exports = instance;

@@ -1,5 +1,8 @@
 {
-	"name": "chamsys-magicqudp",
+	"name": "chamsys-magicq-udp",
+	"legacy": [
+		"chamsys-magicqudp"
+	],
 	"version": "1.0.1",
 	"api_version": "1.0.0",
 	"keywords": [

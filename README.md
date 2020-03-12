@@ -1,2 +1,2 @@
-# companion-module-chamsys-magicqudp
+# companion-module-chamsys-magicq-udp
 See HELP.md and LICENSE

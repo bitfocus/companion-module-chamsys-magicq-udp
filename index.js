@@ -265,12 +265,12 @@ instance.prototype.action = function(action) {
 		break;
 
 		case 'pbGo':
-			cmd = opt.pageId + 'G';
+			cmd = opt.pbId + 'G';
 			debug(cmd);
 		break;
 
 		case 'pbActivate':
-			cmd = opt.pageId + 'A';
+			cmd = opt.pbId + 'A';
 			debug(cmd);
 		break;
 

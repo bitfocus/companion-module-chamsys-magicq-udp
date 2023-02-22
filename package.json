@@ -1,29 +1,19 @@
 {
 	"name": "chamsys-magicq-udp",
-	"legacy": [
-		"chamsys-magicqudp"
-	],
-	"version": "1.0.4",
-	"api_version": "1.0.0",
-	"keywords": [
-		"Lighting"
-	],
-	"manufacturer": "ChamSys",
-	"product": "MagicQ (UDP)",
-	"shortname": "magicq",
-	"homepage": "https://github.com/bitfocus/companion-module-chamsys-magicq-udp#readme",
-	"description": "Module to control Chamsys MagicQ Consoles over UDP network - can't be used in multi console setups",
+	"version": "2.0.0",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Per Røine <per.roine@gmail.com>",
 	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/bitfocus/companion-module-chamsys-magicq-udp/issues"
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bitfocus/companion-module-chamsys-magicq-udp.git"
+	},
+	"dependencies": {
+		"@companion-module/base": "~1.0"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^1.0.2"
 	}
 }

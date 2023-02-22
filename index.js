@@ -47,7 +47,7 @@ class MagicQInstance extends InstanceBase {
 	getConfigFields() {
 		return [
 			{
-				type: 'text',
+				type: 'static-text',
 				id: 'info',
 				width: 12,
 				label: 'Information',

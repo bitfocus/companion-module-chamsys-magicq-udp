@@ -98,8 +98,11 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + ',' + action.options.pbVal + 'L')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					let pbVal = await this.parseVariablesInString(action.options.pbVal)
+
+					sendUDP(pbId + ',' + pbVal + 'L')
 				},
 			},
 
@@ -121,8 +124,11 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.intensityChId + ',' + action.options.intensityChVal + 'I')
+				callback: async (action) => {
+					let intensityChId = await this.parseVariablesInString(action.options.intensityChId)
+					let intensityChVal = await this.parseVariablesInString(action.options.intensityChVal)
+
+					sendUDP(intensityChId + ',' + intensityChVal + 'I')
 				},
 			},
 
@@ -137,8 +143,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + 'G')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					sendUDP(pbId + 'G')
 				},
 			},
 
@@ -153,8 +160,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + 'A')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					sendUDP(pbId + 'A')
 				},
 			},
 
@@ -169,8 +177,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pageId + 'P')
+				callback: async (action) => {
+					let pageId = await this.parseVariablesInString(action.options.pageId)
+					sendUDP(pageId + 'P')
 				},
 			},
 
@@ -185,8 +194,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + 'S')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					sendUDP(pbId + 'S')
 				},
 			},
 
@@ -201,8 +211,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + 'F')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					sendUDP(pbId + 'F')
 				},
 			},
 
@@ -217,8 +228,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + 'B')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					sendUDP(pbId + 'B')
 				},
 			},
 
@@ -233,8 +245,9 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + 'R')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					sendUDP(pbId + 'R')
 				},
 			},
 
@@ -263,8 +276,11 @@ class MagicQInstance extends InstanceBase {
 						regex: Regex.NUMBER,
 					},
 				],
-				callback: (action) => {
-					sendUDP(action.options.pbId + ',' + action.options.cue + ',' + action.options.cueDec + 'J')
+				callback: async (action) => {
+					let pbId = await this.parseVariablesInString(action.options.pbId)
+					let cue = await this.parseVariablesInString(action.options.cue)
+					let cueDec = await this.parseVariablesInString(action.options.cueDec)
+					sendUDP(pbId + ',' + cue + ',' + cueDec + 'J')
 				},
 			},
 		})

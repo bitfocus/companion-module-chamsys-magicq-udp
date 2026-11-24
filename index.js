@@ -40,7 +40,7 @@ class MagicQInstance extends InstanceBase {
 			this.log('error', 'Network error: ' + err.message)
 		})
 		this.udp.on('status_change', (status, message) => {
-			this.status(status, message)
+			this.updateStatus(status, message)
 		})
 	}
 
